@@ -4,6 +4,8 @@ HNG Stage 0 API: classify names using Genderize with validated, processed JSON o
 
 Live endpoint format: `GET /api/classify?name={name}`
 
+Repository: `https://github.com/Habimana06/hng-stage0-name-classifier-api`
+
 ## Tech Stack
 
 - Node.js
@@ -105,6 +107,18 @@ Render is not used, per task instruction.
    - `PORT` (Railway usually provides this automatically)
 5. Deploy and copy your public base URL.
 
+### Heroku
+
+1. Push code to GitHub (or Heroku Git).
+2. Create a Heroku app.
+3. Set buildpack to Node.js (usually automatic).
+4. Deploy from GitHub branch.
+5. Confirm app is running and get app URL.
+
+### Vercel (Serverless)
+
+Use Vercel Node runtime support for Express-compatible handlers or deploy as a Node app via Vercel project settings.
+
 ## Quick API Checks
 
 PowerShell:
@@ -119,18 +133,6 @@ Bash:
 curl "http://localhost:3000/api/classify?name=john"
 ```
 
-### Heroku
-
-1. Push code to GitHub (or Heroku Git).
-2. Create a Heroku app.
-3. Set buildpack to Node.js (usually automatic).
-4. Deploy from GitHub branch.
-5. Confirm app is running and get app URL.
-
-### Vercel (Serverless)
-
-Use Vercel Node runtime support for Express-compatible handlers or deploy as a Node app via Vercel project settings.
-
 ## Submission Checklist
 
 - API is live and reachable publicly
@@ -139,4 +141,4 @@ Use Vercel Node runtime support for Express-compatible handlers or deploy as a N
 - GitHub repo includes this README
 - Submit:
   - Base URL
-  - GitHub repo URL
+  - GitHub repo URL: `https://github.com/Habimana06/hng-stage0-name-classifier-api`
